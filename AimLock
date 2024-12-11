@@ -1,103 +1,12 @@
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO(data) m=string.sub(data, 0, 135) data=data:gsub(m,'')
+local function obf_adjnqwidqwjhdpoq() local function obf_wrapperfunc(obf_arg) if obf_arg then getgenv().Aimbot={[LUAOBFUSACTOR_DECRYPT_STR_0("\27\7\117\104\61\0","\28\72\115\20")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\31\28\166\211\214\131\216","\188\84\121\223\177\191\237")]="T",[LUAOBFUSACTOR_DECRYPT_STR_0("\233\178\66\217\128\211\175","\225\161\219\54\169")]=LUAOBFUSACTOR_DECRYPT_STR_0("\120\37\88\36\71\77\51\84\2\90\42\93\114\59\66\36","\90\48\80\53\69\41\34"),[LUAOBFUSACTOR_DECRYPT_STR_0("\27\174\198\211\250\40\168\202\216\253","\147\75\220\163\183")]={X=0.12201967131678647,Y=0.6}};if getgenv().AimbotRan then return;else getgenv().AimbotRan=true;end local RunService=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\24\204\12\137\142\16\60\208\1\191","\98\74\185\98\218\235"));local Workspace=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\157\196\46\44\10\186\202\63\34","\121\202\171\92\71"));local Players=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\98\132\40\216\41\204\65","\190\50\232\73\161\76"));local StarterGui=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\136\205\67\79\10\190\203\101\72\23","\126\219\185\34\61"));local HttpService=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\36\218\74\98\77\114\225\241\5\205\91","\135\108\174\62\18\30\23\147"));local LocalPlayer=Players.LocalPlayer;local Camera=Workspace.CurrentCamera;local Mouse=LocalPlayer:GetMouse();local Player=nil;local function Notify(message,duration) StarterGui:SetCore(LUAOBFUSACTOR_DECRYPT_STR_0("\133\236\36\207\54\161\39\206\176\224\41\202\12\167\60\201","\167\214\137\74\171\120\206\83"),{[LUAOBFUSACTOR_DECRYPT_STR_0("\191\249\38\81\253","\199\235\144\82\61\152")]=LUAOBFUSACTOR_DECRYPT_STR_0("\38\5\173\57\6\26\176\56\71\55\176\38","\75\103\118\217"),[LUAOBFUSACTOR_DECRYPT_STR_0("\243\81\104\0","\126\167\52\16\116\217")]=message,[LUAOBFUSACTOR_DECRYPT_STR_0("\236\59\50\129\160\16\243\198","\156\168\78\64\224\212\121")]=duration or 45 });end local function CopyToClipboard(text) if setclipboard then setclipboard(text);elseif toclipboard then toclipboard(text);else warn(LUAOBFUSACTOR_DECRYPT_STR_0("\36\226\172\222\5\225\164\220\3\174\163\219\9\237\177\199\8\224\164\194\14\250\188\142\9\225\177\142\20\251\181\222\8\252\177\203\3\174\170\192\71\250\173\199\20\174\160\214\2\237\176\218\8\252\235","\174\103\142\197"));end end Notify(LUAOBFUSACTOR_DECRYPT_STR_0("\122\45\88\57\38\71\184\96\45\77\43\44\81\246\22\4\80\57\33\91\252\26\104\116\61\60\92\241\88\44\31\49\54\30\204\24","\152\54\72\63\88\69\62"),45);CopyToClipboard(LUAOBFUSACTOR_DECRYPT_STR_0("\220\208\250\76\199\158\161\19\208\205\253\95\219\214\234\18\211\195\161\120\204\229\214\89\236\210\224\116\140","\60\180\164\142"));local GetClosestPlayer=function() local FlatIdent_2BD95=0;local ClosestDistance;local ClosestPlayer;while true do if (FlatIdent_2BD95==1) then return ClosestPlayer;end if (FlatIdent_2BD95==0) then ClosestDistance,ClosestPlayer=100000,nil;for _,Player in pairs(Players:GetPlayers()) do if ((Player.Name~=LocalPlayer.Name) and Player.Character and Player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\112\75\8\40\41\226\27\92\108\10\38\51\221\19\74\74","\114\56\62\101\73\71\141"))) then local FlatIdent_60EA1=0;local FlatIdent_95CAC;local Root;local Visible;while true do if (FlatIdent_60EA1==1) then Visible=nil;while true do if (FlatIdent_95CAC==1) then Root=(Vector2.new(Mouse.X,Mouse.Y) -Vector2.new(Root.X,Root.Y)).Magnitude;if (Root<ClosestDistance) then local FlatIdent_8D327=0;while true do if (FlatIdent_8D327==0) then ClosestPlayer=Player;ClosestDistance=Root;break;end end end break;end if (FlatIdent_95CAC==0) then local FlatIdent_1076E=0;while true do if (1==FlatIdent_1076E) then FlatIdent_95CAC=1;break;end if (FlatIdent_1076E==0) then Root,Visible=Camera:WorldToScreenPoint(Player.Character.HumanoidRootPart.Position);if  not Visible then continue;end FlatIdent_1076E=1;end end end end break;end if (FlatIdent_60EA1==0) then FlatIdent_95CAC=0;Root=nil;FlatIdent_60EA1=1;end end end end FlatIdent_2BD95=1;end end end;Mouse.KeyDown:Connect(function(key) if (key==Aimbot.Keybind:lower()) then Player=( not Player and GetClosestPlayer()) or nil ;end end);RunService.RenderStepped:Connect(function() local FlatIdent_24A02=0;local Hitpart;while true do if (FlatIdent_24A02==1) then local FlatIdent_A36C=0;while true do if (FlatIdent_A36C==0) then Hitpart=Player.Character:FindFirstChild(Aimbot.Hitpart);if  not Hitpart then return;end FlatIdent_A36C=1;end if (FlatIdent_A36C==1) then FlatIdent_24A02=2;break;end end end if (FlatIdent_24A02==0) then if  not Player then return;end if  not Aimbot.Status then return;end FlatIdent_24A02=1;end if (FlatIdent_24A02==2) then Camera.CFrame=CFrame.new(Camera.CFrame.Position,Hitpart.Position + (Hitpart.Velocity * Vector3.new(Aimbot.Prediction.X,Aimbot.Prediction.Y,Aimbot.Prediction.X)) );break;end end end);else local sdawdwqdq=obf_arg[1];end end if (obf_tonumber(obf_stringmatch(obf_stringmatch(({obf_pcall(obf_wrapperfunc,nil)})[2],":%d+:"),"%d+"))==1) then return obf_wrapperfunc({});else return obf_adjnqwidqwjhdpoq();end end return obf_adjnqwidqwjhdpoq();
+-- ⚠️ WARNING: integrity protected!
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
 
-data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
-
-
- 
-
-
--- CODED BY P DIDDY
-
-getgenv().Aimbot = {
-    Status = true,
-    Keybind = YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('becBjlniPztrKLFXuASwanmAgmhcTxtHTmKBEqZOKTNaiTkcYGEVgXnldieSuRHfOHIMDjHSDMpMFkrOjxAWopImdjROrqehrUMtgMLlqzQBNEwVSjEatyCtQscmpQCFUQmSMrWVA=='),
-    Hitpart = YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('TbuiSVDQbjuqtsxVIdGrUslDebPziiINGkIoPDXqwpJinPkOlpmjEyUIhHTXopIpkvsbuCDwHMDzDhWzJVpUMBVaRvvQUKOQuTNPPKIiZNVyNxtqcVvNbOilmeKbJXvEjZRXZWZSHVtYW5vaWRSb290UGFydA=='),
-    [YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('JrITJJEsyfsRiugvgIrPUMIRntcEPJzMeldZDJVvGPbMAlRwHtaWegSqTAYuogdaGPYOYDTvMrNfvjDSXvSqLfbfESOYMasvTHFJuyjCTnuntakJgAjtdlzInlRnJEjUBGDFcIZUHJlZGljdGlvbg==')] = {
-        X = 0.12201967131678647,
-        Y = 0.6,
-    },
-}
-
-if getgenv().AimbotRan then
-    return
-else
-    getgenv().AimbotRan = true
-end
--- Make it re-executable to update settings
-
-local RunService = game:GetService(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('VajkWuIMCJILdcBMXiSemvLKaxXbNYpJrRAUXpJqxEAbYUdnIcBbRUeeGuiywnZCXhuyJjwyjYRrzDdpllgitrKBmKEXghmSsSzuljxGjQIEjiYlnYsZzGxVXDcxcBFWKGEZuWIUnVuU2VydmljZQ=='))
-local Workspace = game:GetService(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('olviFIvzvAknvomADQUtqiyRnjUIJbwnZQBiSiVxxpZmMguSrikxJxQtsynovveveTLYUiXcfFofLyxcaXoqycHEjWthXvxCqGjCekAMOYKwbJrxPIjkeJwtYssckoNwMYkUmZIV29ya3NwYWNl'))
-local Players = game:GetService(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('LeKZWmDKMKjgmDogPEasrRxlVmXqQZPVblMPNPFvSQoxjOiwgHUxolAdqkRWrwohRPtmCFyhAzAqLuRVmpiYxcEemXUCRUGQAjahuhmYDzBsZNPYPkYtNAsdKwPAMNrECvnMFcIUGxheWVycw=='))
-local StarterGui = game:GetService(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('SFWVZpLFWFmJVgrykxkVhrYPsLyiTYbRuEQCTEZwruDnhYoTpHakTykmSpFCNwbbzpReeZeDFBrzImmQkQATkTecKNUZirPlJIStdibtlJHedKVbBmNkrXEbjDkiKBzXmcIUpXGU3RhcnRlckd1aQ==')) -- For notifications
-local HttpService = game:GetService(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('UPNYJONfedLDHYMcDIEPvTBycEhwKMjfjrsammPlnRaZOAbLQvWCPwulCROteddfXPItKSHVOrWsfLfKOmklDvwtJTsPRNLPGPXDeZpVuIzqIRPSLOgwTwogpsmtohSNwAPzQbWSHR0cFNlcnZpY2U=')) -- For clipboard functionality if supported
-local LocalPlayer = Players.LocalPlayer
-local Camera = Workspace.CurrentCamera
-local Mouse = LocalPlayer:GetMouse()
-
-local Player = nil -- Our target player
-
--- Function to send a notification
-local function Notify(message, duration)
-    StarterGui:SetCore(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('XcudzcJBhDSzVQNsqAsONigHrZBQxSpnqGUNVNiPIpJskyGFnnFPaRhIiCddMrBaTWvfGnnrfWsIKZpAkBZdgnRIKuHuWpKJUEUlLtjLsILARjASyGdrZNQdOFHuuuLnqELIIlQU2VuZE5vdGlmaWNhdGlvbg=='), {
-        Title = YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('hYGlDxighxaRNDdBvTPtrymqnlBbzvDbShofSixnGvaQurEPfrjRqHFgySjJAiJfbKgXPIeorWrflJmVknMyWyvECDmZZubpzhMnhysAYQfKJUqlfQvbBgcdACnLaDpvEmPkDdIQXN0cmFsaXMgQWlt'),
-        Text = message,
-        Duration = duration or 45
-    })
-end
-
--- Function to copy text to the clipboard
-local function CopyToClipboard(text)
-    if setclipboard then
-        setclipboard(text)
-    elseif toclipboard then
-        toclipboard(text)
-    else
-        warn(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('jZsasCsMcEzcAOweJwciCoLlLtCGIDyZiPwRXgZvYgccYeNcNOtlYYamzLxjTIbCMzSwqQMVkEHgDlvyFtUqtXaXBrzyKqbiORpycCYFplRPqiHlIXDHKLhNKTsPBCrnsXQfdsLQ2xpcGJvYXJkIGZ1bmN0aW9uYWxpdHkgbm90IHN1cHBvcnRlZCBvbiB0aGlzIGV4ZWN1dG9yLg=='))
-    end
-end
-
--- Notify the user and copy the Discord invite link to clipboard
-Notify(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('mYMvqsypyJeJqKorekJyqjrjiPEfjPqQTlihOSAkWKYNhZWPPUmlvUhSiXpcdwmwQoCSACHNhaZxwVxYFLtJnmSwxUCwmVVdpdZZhgXGCokpNaqLLNLgoBiVXuiGrUYHsneVXVfTGVnYWN5IFZlcnNpb24gTG9hZGVkLCBLZXliaW5kIGlzIFQu'), 45)
-CopyToClipboard(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('QXTdZnuxAGirLWgZVltPmpCwxtPycvRcEnlqXfcLKuEcHcaWMGLwvNWqSFSaMEPGZYxiCXHLnNPgapuoiIUXjuNJBGoqdSyGZgEWUcdtncPliFnIhPbwxkcRJgYomiFHEueQVYmaHR0cHM6Ly9kaXNjb3JkLmdnL0R4QVhlWHZuSDg=')) -- Replace with your actual Discord invite link
-
--- Function to get the closest player
-local GetClosestPlayer = function()
-    local ClosestDistance, ClosestPlayer = 100000, nil
-    for _, Player: Player in pairs(Players:GetPlayers()) do
-        if Player.Name ~= LocalPlayer.Name and Player.Character and Player.Character:FindFirstChild(YLXibivMLUPSLGYtxozxOxQDXcBmjHEIyoLTTKnBUJLasrTCNqNUxogkRhBynxBZmPAYUVoPTYuMfsqynkggoDEvMO('TtKoxaKdZOcBDQRCpzRsqCbRwEubmSqwLhJVoOPYOVVoLPqUhmtPqOHkJdqpVzkJBiLirDGgpNaawNFvmvziKJjwdBcdGFsOvdxCssInSHmoDSTbHvxgaiPFKytacQZnbYmneajSHVtYW5vaWRSb290UGFydA==')) then
-            local Root, Visible = Camera:WorldToScreenPoint(Player.Character.HumanoidRootPart.Position)
-            if not Visible then
-                continue
-            end
-            Root = (Vector2.new(Mouse.X, Mouse.Y) - Vector2.new(Root.X, Root.Y)).Magnitude
-            if Root < ClosestDistance then
-                ClosestPlayer = Player
-                ClosestDistance = Root
-            end
-        end
-    end
-    return ClosestPlayer
-end
-
--- Keybind to toggle targeting
-Mouse.KeyDown:Connect(function(key)
-    if key == Aimbot.Keybind:lower() then
-        Player = not Player and GetClosestPlayer() or nil
-    end
-end)
-
--- Update camera to aim at target
-RunService.RenderStepped:Connect(function()
-    if not Player then
-        return
-    end
-    if not Aimbot.Status then
-        return
-    end
-    local Hitpart = Player.Character:FindFirstChild(Aimbot.Hitpart)
-    if not Hitpart then
-        return
-    end
-    Camera.CFrame = CFrame.new(Camera.CFrame.Position, Hitpart.Position + Hitpart.Velocity * Vector3.new(Aimbot.Prediction.X, Aimbot.Prediction.Y, Aimbot.Prediction.X))
-end)    
+]]--
